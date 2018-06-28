@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * @author Atwix Team
+ * @copyright Copyright (c) 2018 Atwix (https://www.atwix.com/)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="atwix.modulesetupcommands.set-version" xsi:type="object">Atwix\ModuleSetupCommands\Console\SetModuleSetupVersionCommand</item>
+                <item name="atwix.modulesetupcommands.show-version" xsi:type="object">Atwix\ModuleSetupCommands\Console\ShowModuleSetupVersionCommand</item>
+                <item name="atwix.modulesetupcommands.fix-versions" xsi:type="object">Atwix\ModuleSetupCommands\Console\FixModuleSetupVersionsCommand</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
